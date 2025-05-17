@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2A Protocol Web UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>A2A Protocol Web UI</h1>
+        <div class="form-group">
+            <label for="endpoint">Recipient Endpoint:</label>
+            <input type="text" id="endpoint" placeholder="https://recipient.example.com/api/messages">
+        </div>
+        <div class="form-group">
+            <label for="msgType">Message Type:</label>
+            <input type="text" id="msgType" placeholder="message-type">
+        </div>
+        <div class="form-group">
+            <label for="msgBody">Message Body:</label>
+            <textarea id="msgBody" rows="6" placeholder='{"foo": "bar"}'></textarea>
+        </div>
+        <button id="sendButton">Send</button>
+        <pre id="response" class="response"></pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
